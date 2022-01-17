@@ -73,6 +73,26 @@ body {
 .custom {
     background-color: #f6f6fb;
     color: #577470;
+    position: relative; 
+}
+
+.custom_hidden{
+    display: none;
+}
+
+.custom_input{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-align: right;
+    padding: 5px;
+    display: none;
+}
+
+.custom_input_show{
+    display: flex;
 }
 
 .people input{
