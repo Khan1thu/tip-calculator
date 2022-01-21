@@ -36,7 +36,7 @@ body {
     background-position: 10px;
     border: 0px solid;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 2px 10px;
     width: 100%;
     background-color: hsl(189, 41%, 97%);
     cursor: pointer;
@@ -74,6 +74,7 @@ body {
     background-color: #f6f6fb;
     color: #577470;
     position: relative; 
+    width: 100%;
 }
 
 .custom_hidden{
@@ -95,6 +96,12 @@ body {
     display: flex;
 }
 
+.people_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .people input{
     display: block;
     font-size: 1.2rem;
@@ -105,7 +112,7 @@ body {
     background-position: 10px;
     border: 0px solid;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 2px 10px;
     width: 100%;
     background-color: hsl(189, 41%, 97%);
     cursor: pointer;
@@ -113,6 +120,22 @@ body {
 
 .people input:focus{
     outline-color: #41b4a5;
+}
+
+.Zero{
+    font-size: 0.7rem; 
+    margin-top: 10px; 
+    font-weight: 700; 
+    color: #bc7969; 
+    display: none;
+}
+
+.zero_show{
+    display: flex;
+}
+
+.people_show{
+    border: 1px solid #bc7969;
 }
 
 .right{

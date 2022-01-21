@@ -36,21 +36,24 @@
       <label for="button" style="display: block; font-size: 0.7rem; margin: 10px 0; font-weight: 700;">Select Tip
         %</label>
       <div class="Tip">
-        <input type="button" class="tip_button" value="5%">
-        <input type="button" class="tip_button" value="10%">
-        <input type="button" class="tip_button" value="15%">
-        <input type="button" class="tip_button" value="25%">
-        <input type="button" class="tip_button" value="50%">
+        <input type="button" class="tip_button five" value="5%">
+        <input type="button" class="tip_button ten" value="10%">
+        <input type="button" class="tip_button fifteen" value="15%">
+        <input type="button" class="tip_button twentiefive" value="25%">
+        <input type="button" class="tip_button fivinty" value="50%">
         <div class="custom_button" style="position: relative;">
-          <input onclick="custominput()" type="button" class="tip_button custom" value="Custom">
+          <input type="button" class="tip_button custom" value="Custom">
           <input class="custom_input" type="text">
         </div>
       </div>
 
       <div class="people">
-        <label for="people" style="display: block; font-size: 0.7rem; margin-top: 10px; font-weight: 700;">Number of
-          People</label>
-        <input type="text" id="people" placeholder="0" class="people">
+        <div class="people_title">
+          <label for="people" style="display: block; font-size: 0.7rem; margin-top: 10px; font-weight: 700;">Number of
+            People</label>
+          <label class="Zero">Can't be Zero</label>
+        </div>
+        <input type="text" placeholder="0" class="people_input">
       </div>
 
     </div>
@@ -58,15 +61,15 @@
     <div class="right">
       <div class="tip_amount">
         <p>Tip Amount <small style="display: block;">/ person</small> </p>
-        <p id="result">$0.00</p>
+        <p id="result" class="tipAmount">$0.00</p>
       </div>
 
       <div class="total">
         <p>Total<small style="display: block;">/ person</small> </p>
-        <p id="result">$0.00</p>
+        <p id="result" class="totalAmount">$0.00</p>
       </div>
 
-      <button type="reset">Reset</button>
+      <button type="reset" class="reset">Reset</button>
     </div>
   </div>
 
